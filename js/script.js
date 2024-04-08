@@ -13,6 +13,7 @@ function inicio() {
     document.querySelector("#btnEj10").addEventListener("click", ej10);
     document.querySelector("#btnEj11").addEventListener("click", ej11);
     document.querySelector("#btnEj12").addEventListener("click", ej12);
+    document.querySelector("#btnEj13").addEventListener("click", ej13);
 }
 
 function ej1() {
@@ -165,5 +166,15 @@ if (vocales.includes(car)){
     document.querySelector("#resEj12").innerHTML = "Es vocal"
 }else {
     document.querySelector("#resEj12").innerHTML = "No es vocal"
+}
+}
+function ej13(){
+    let valor1, valor2;
+    valor1=document.querySelector("#valor1Ej13").value;
+    valor2=document.querySelector("#valor2Ej13").value;
+if ((valor1 % valor2)==0){
+    document.querySelector("#resEj13").innerHTML = "Es múltiplo"
+}else {
+    document.querySelector("#resEj13").innerHTML = "No es múltiplo"
 }
 }
