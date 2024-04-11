@@ -21,7 +21,6 @@ function inicio() {
     document.querySelector("#btnEj18").addEventListener("click", ej18);
     document.querySelector("#btnEj19").addEventListener("click", ej19);
     document.querySelector("#btnEj20").addEventListener("click", ej20);
-<<<<<<< HEAD
     document.querySelector("#btnEj21").addEventListener("click", ej21);
     document.querySelector("#btnEj22").addEventListener("click", ej22);
     document.querySelector("#btnEj23").addEventListener("click", ej23);
@@ -29,8 +28,6 @@ function inicio() {
     document.querySelector("#btn1Ej25").addEventListener("click", ej25);
     document.querySelector("#btn2Ej25").addEventListener("click", ej25b);
     document.querySelector("#btn3Ej25").addEventListener("click", ej25c);
-=======
->>>>>>> 91dcaac189a75fefaad576086e02ddb2c532858a
 }
 
 function ej1() {
@@ -162,11 +159,7 @@ function ej11() {
     let valor1, valor2, res;
     valor1 = Number(document.querySelector("#valor1Ej11").value);
     valor2 = Number(document.querySelector("#valor2Ej11").value);
-<<<<<<< HEAD
     /*     console.log(valor1, valor2) */
-=======
-/*     console.log(valor1, valor2) */
->>>>>>> 91dcaac189a75fefaad576086e02ddb2c532858a
     if (document.querySelector("#ra1Ej11").checked) {
         res = valor1 + valor2
     } else if (document.querySelector("#ra2Ej11").checked) {
@@ -206,19 +199,11 @@ function ej14() {
     let valor1, plus;
     valor1 = parseInt(document.querySelector("#valor1Ej14").value);
     plus = document.querySelector("#ra1Ej14").checked;
-<<<<<<< HEAD
     /*     console.log(plus) */
     if (plus) {
         valor1 += valor1
     }
     /*  console.log(valor1) */
-=======
-/*     console.log(plus) */
-    if (plus) {
-        valor1 += valor1
-    }
-   /*  console.log(valor1) */
->>>>>>> 91dcaac189a75fefaad576086e02ddb2c532858a
     if (valor1 >= 60000) {
         document.querySelector("#resEj14").innerHTML = "Europa";
     } else if (valor1 >= 30000) {
@@ -354,12 +339,8 @@ function ej18() {
 let contadorEj19 = 0;
 let contadorM5Ej19 = 0;
 let contadorM20Ej19 = 0;
-<<<<<<< HEAD
 let contadorL2Ej18 = 0;
 
-=======
-let contadorL2Ej18=0;
->>>>>>> 91dcaac189a75fefaad576086e02ddb2c532858a
 function ej19() {
     let valor1 = parseInt(document.querySelector("#valor1Ej19").value);
     if (contadorEj19 < 5) {
@@ -368,22 +349,14 @@ function ej19() {
             contadorM5Ej19++
             contadorL2Ej18++
             contadorEj19++
-<<<<<<< HEAD
         } else if ((valor1 % 5) === 0) {
             contadorM5Ej19++
             contadorEj19++
         } else if (valor1 > 20) {
-=======
-        }else if ((valor1 % 5) === 0){
-            contadorM5Ej19++
-            contadorEj19++
-        }else if (valor1 > 20) {
->>>>>>> 91dcaac189a75fefaad576086e02ddb2c532858a
             contadorM20Ej19++
             contadorEj19++
         }
         document.querySelector("#resEj19").innerHTML = `${contadorM20Ej19} son mayores que 20, ${contadorM5Ej19} son múltiplos de 5 y ${contadorL2Ej18} cumplen ambas condiciones`
-<<<<<<< HEAD
     } else {
         document.querySelector("#resEj19").innerHTML = `Límite alcanzado último resultado: ${contadorM20Ej19} son mayores que 20, ${contadorM5Ej19} son múltiplos de 5 y ${contadorL2Ej18} cumplen ambas condiciones`
     }
@@ -540,19 +513,4 @@ function ej25b() {
 function ej25c(){
     cantidadComprasEj25=0
     document.querySelector("#resEj25").innerHTML = `Compras reseteadas, stock de ${stockEj25} cámaras.`
-=======
-    }else {
-        document.querySelector("#resEj19").innerHTML = `Límite alcanzado último resultado: ${contadorM20Ej19} son mayores que 20, ${contadorM5Ej19} son múltiplos de 5 y ${contadorL2Ej18} cumplen ambas condiciones`
-    }
-    
-}
-function ej20(){
-    let harina, azucar, aceite, agua, min;
-    harina=parseInt(document.querySelector("#valor1Ej20").value);
-    azucar=parseInt(document.querySelector("#valor2Ej20").value);
-    aceite=parseInt(document.querySelector("#valor3Ej20").value);
-    agua=parseInt(document.querySelector("#valor4Ej20").value);
-    min=Math.min(harina, (azucar/100), aceite, agua);
-    document.querySelector("#resEj20").innerHTML = `se pueden hacer ${min} recetas`
->>>>>>> 91dcaac189a75fefaad576086e02ddb2c532858a
 }
