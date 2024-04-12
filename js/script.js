@@ -446,7 +446,7 @@ function ej24() {
     } else {
         salarioMinimoEj24 = (Math.min(salarioMinimoEj24, salario))
     }
-    document.querySelector("#resEj24").innerHTML = `${salariosTotalesEj24} es el total de salarios a pagar, obteniendo un salario promedio de ${promedio}, con un salarío mínimo de ${salarioMinimoEj24}.`
+    document.querySelector("#resEj24").innerHTML = `${salariosTotalesEj24} es el total de salarios a pagar,pagando ${cantidadCobrosEj24} salarios, obteniendo un salario promedio de ${promedio}, con un salarío mínimo de ${salarioMinimoEj24}.`
 }
 
 let stockEj25 = 0;
